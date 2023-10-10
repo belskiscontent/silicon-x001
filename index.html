@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Feed</title>
+    <title>TEST01-AJFEED</title>
+    <!-- Add your CSS styles here to customize the appearance of the feed -->
     <style>
-        /* Add your CSS styles here to customize the appearance of the news items */
-        #news-container {
+        /* Customize the appearance of the feed */
+        #feed-container {
             margin: 20px;
         }
         h2 {
@@ -17,51 +18,48 @@
             font-size: 14px;
         }
     </style>
-    
-    <!-- Add your JavaScript code here -->
-    <script>
-	    // Define the URL of the RSS feed
-const rssFeedUrl = 'https://www.ajplus.net/stories?format=rss';
-
-// Use the Fetch API to retrieve the RSS feed
-fetch(rssFeedUrl)
-  .then((response) => response.text())
-  .then((data) => {
-    // Parse the XML data into a JavaScript object
-    const parser = new DOMParser();
-    const xmlDoc = parser.parseFromString(data, 'text/xml');
-
-    // Extract items (news articles) from the RSS feed
-    const items = xmlDoc.querySelectorAll('item');
-
-    // Loop through the items and display them on your website
-    items.forEach((item) => {
-      const title = item.querySelector('title').textContent;
-      const description = item.querySelector('description').textContent;
-      const link = item.querySelector('link').textContent;
-
-      // Create HTML elements to display the news content
-      const newsItem = document.createElement('div');
-      newsItem.innerHTML = `<h2><a href="${link}" target="_blank">${title}</a></h2>
-                            <p>${description}</p>`;
-
-      // Append the news item to your webpage
-      document.getElementById('news-container').appendChild(newsItem);
-    });
-  })
-  .catch((error) => {
-    console.error('Error fetching RSS feed:', error);
-  });
-
-        // JavaScript code to retrieve and parse the RSS feed should be placed here
-        // Example:
-        // fetchRSSFeedAndDisplayNews();
-    </script>
 </head>
 <body>
-    <h1>www.belski.com</h1>
-    <div id="news-container">
-        <!-- News items will be displayed here using JavaScript -->
+    <div id="feed-container">
+        <!-- The RSS feed items will be displayed here using JavaScript -->
     </div>
+    
+    <!-- Add your JavaScript code for the RSS feed reader here -->
+    <script>
+        // JavaScript code to fetch and display the RSS feed
+        // Replace the following URL with the RSS feed URL you want to display
+        const rssFeedUrl = 'https://www.ajplus.net/stories?format=rss';
+
+        // Function to fetch and display the RSS feed
+        function fetchAndDisplayRSSFeed() {
+            fetch(rssFeedUrl)
+                .then((response) => response.text())
+                .then((data) => {
+                    const parser = new DOMParser();
+                    const xmlDoc = parser.parseFromString(data, 'text/xml');
+                    const items = xmlDoc.querySelectorAll('item');
+
+                    // Create and display the RSS feed items
+                    items.forEach((item) => {
+                        const title = item.querySelector('title').textContent;
+                        const description = item.querySelector('description').textContent;
+                        const link = item.querySelector('link').textContent;
+
+                        const newsItem = document.createElement('div');
+                        newsItem.innerHTML = `<h2><a href="${link}" target="_blank">${title}</a></h2>
+                                              <p>${description}</p>`;
+
+                        document.getElementById('feed-container').appendChild(newsItem);
+                    });
+                })
+                .catch((error) => {
+                    console.error('Error fetching RSS feed:', error);
+                });
+        }
+
+        // Call the function to fetch and display the RSS feed
+        fetchAndDisplayRSSFeed();
+    </script>
 </body>
 </html>
+
