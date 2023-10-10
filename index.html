@@ -1,227 +1,67 @@
-<h1>www.belski.com</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Feed</title>
+    <style>
+        /* Add your CSS styles here to customize the appearance of the news items */
+        #news-container {
+            margin: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 14px;
+        }
+    </style>
+    
+    <!-- Add your JavaScript code here -->
+    <script>
+	    // Define the URL of the RSS feed
+const rssFeedUrl = 'https://www.ajplus.net/stories?format=rss';
 
-<p>RSS test</p>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/"
-	
-	xmlns:georss="http://www.georss.org/georss"
-	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-	>
-	<channel>
-		<atom:link href="https://www.aljazeera.com/xml/rss/all.xml" rel="self" type="application/rss+xml"/>
-		<title>Al Jazeera &#8211; Breaking News, World News and Video from Al Jazeera</title>
-		<link>https://www.aljazeera.com</link>
-		<managingEditor>apps.support@aljazeera.net (Apps Support)</managingEditor>
-		<webMaster>apps.support@aljazeera.net (Apps Support)</webMaster>
-		<description>Breaking News, World News and Video from Al Jazeera</description>
-		<copyright>© 2023 Al Jazeera Media Network</copyright>
-		<lastBuildDate>Tue, 10 Oct 2023 10:49:43 +0000</lastBuildDate>
-		<language>en</language>
-		<image>
-			<url>https://www.aljazeera.com/images/logo_aje.png</url>
-			<title>Al Jazeera &#8211; Breaking News, World News and Video from Al Jazeera</title>
-			<link>https://www.aljazeera.com</link>
-			<description>Breaking News, World News and Video from Al Jazeera</description>
-		</image>
-		<generator>https://wordpress.org/?v=6.1.3</generator>
-			<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/what-is-hezbollah-a-look-at-the-lebanese-armed-group-backing-hamas?traffic_source=rss</link>
-				<title>What is Hezbollah? A look at the Lebanese armed group backing Hamas</title>
-				<description><![CDATA[Hezbollah has described the deadly Hamas attack as &#039;a decisive response to Israel’s continued occupation&#039;.]]></description>
-				<pubDate>Tue, 10 Oct 2023 10:49:43 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696850926</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/four-uk-citizens-freed-from-detention-in-afghanistan?traffic_source=rss</link>
-				<title>Four UK citizens freed from detention in Afghanistan</title>
-				<description><![CDATA[Foreign office welcomes release and apologises on behalf of families for &#039;any violations of the laws of the country&#039;.]]></description>
-				<pubDate>Tue, 10 Oct 2023 10:45:41 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696930399</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/agnieszka-holland-polish-filmmaker-interview?traffic_source=rss</link>
-				<title>Agnieszka Holland: Poland ‘orchestrated campaign’ against Green Border</title>
-				<description><![CDATA[Agnieszka Holland, whose refugee drama Green Border has been attacked by politicians, talks to Al Jazeera.]]></description>
-				<pubDate>Tue, 10 Oct 2023 10:31:37 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696845428</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/we-cant-confuse-hamas-with-all-palestinians-spain-says-amid-aid-review?traffic_source=rss</link>
-				<title>‘We can’t confuse Hamas with all Palestinians’: Spain says amid aid review</title>
-				<description><![CDATA[European Union foreign ministers are due to discuss the proposed suspension of EU aid to the Palestinian territories.]]></description>
-				<pubDate>Tue, 10 Oct 2023 09:53:03 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?p=2397318</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/opinions/2023/10/10/fanons-conception-of-violence-does-not-work-in-palestine?traffic_source=rss</link>
-				<title>Fanon’s conception of violence does not work in Palestine</title>
-				<description><![CDATA[Israel&#039;s settler colonialism is much more than &#039;violence in its natural state&#039;.]]></description>
-				<pubDate>Tue, 10 Oct 2023 09:50:05 +0000</pubDate>
-				<category>Opinions</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696838278</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/south-korea-mulls-pause-on-north-korea-military-pact-after-hamas-attack?traffic_source=rss</link>
-				<title>South Korea mulls pause on North Korea military pact after Hamas attack</title>
-				<description><![CDATA[South Korea&#039;s defence minister says violence in Israel and Gaza shows a need to strengthen monitoring of the North.]]></description>
-				<pubDate>Tue, 10 Oct 2023 09:48:00 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696922648</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/israel-and-hamas-war-what-to-know-on-day-4-after-surprise-attack?traffic_source=rss</link>
-				<title>Israel and Hamas war: List of key events, day 4 after surprise attack</title>
-				<description><![CDATA[As the conflict between Israel and Palestine enters its fourth day, these are the main developments.]]></description>
-				<pubDate>Tue, 10 Oct 2023 09:07:57 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696916703</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/program/newsfeed/2023/10/10/un-condemns-complete-siege-of-gaza-2?traffic_source=rss</link>
-				<title>UN condemns complete siege of Gaza</title>
-				<description><![CDATA[The UN Secretary-General says he is ‘deeply distressed’ by Israel’s complete siege of the Gaza Strip.]]></description>
-				<pubDate>Tue, 10 Oct 2023 08:36:00 +0000</pubDate>
-				<category>Show Types</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696926829</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/program/newsfeed/2023/10/10/netanyahu-says-gaza-bombardment-have-only?traffic_source=rss</link>
-				<title>Netanyahu says Gaza bombardment “have only started”</title>
-				<description><![CDATA[Israeli Prime Minister Benjamin Netanyahu says the current bombardment on Gaza has “only started”.]]></description>
-				<pubDate>Tue, 10 Oct 2023 08:33:38 +0000</pubDate>
-				<category>Show Types</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696926657</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/program/newsfeed/2023/10/10/what-is-the-armed-palestinian-group-hamas-2?traffic_source=rss</link>
-				<title>What is the armed Palestinian group Hamas?</title>
-				<description><![CDATA[Where did the group come from, who supports it and what is it fighting for? Here’s what you need to know.]]></description>
-				<pubDate>Tue, 10 Oct 2023 08:30:35 +0000</pubDate>
-				<category>Show Types</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696926405</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/program/newsfeed/2023/10/10/how-the-spread-of-information-shapes-the-narrative-in-israel-hamas-war?traffic_source=rss</link>
-				<title>How the spread of information shapes the narrative in Israel-Hamas war</title>
-				<description><![CDATA[“The war of words.”]]></description>
-				<pubDate>Tue, 10 Oct 2023 08:26:19 +0000</pubDate>
-				<category>Show Types</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696926093</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/program/newsfeed/2023/10/10/injured-children-pulled-out-of-destroyed-gaza-building-after-israeli-strike?traffic_source=rss</link>
-				<title>Injured children pulled out of destroyed Gaza building after Israeli strike</title>
-				<description><![CDATA[Rescuers have pulled injured women and children out of a building in Gaza City, destroyed by an Israeli airstrike. ]]></description>
-				<pubDate>Tue, 10 Oct 2023 08:21:12 +0000</pubDate>
-				<category>Show Types</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696925420</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/economy/2023/10/10/will-global-oil-prices-keep-rising-due-to-the-israel-hamas-war?traffic_source=rss</link>
-				<title>Will global oil prices keep rising due to the Israel-Hamas war?</title>
-				<description><![CDATA[Analysts see limited effect on prices in short term as neither Israel nor Gaza are significant producers. ]]></description>
-				<pubDate>Tue, 10 Oct 2023 07:54:40 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696914239</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/russia-launches-dozens-of-drones-into-ukraine-in-latest-air-raid-kyiv?traffic_source=rss</link>
-				<title>Russia launches dozens of drones into Ukraine in latest air raid: Kyiv</title>
-				<description><![CDATA[Ukraine says it downed 27 Russian drones out of 36 sent from the Crimean peninsula overnight.]]></description>
-				<pubDate>Tue, 10 Oct 2023 07:51:19 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696917663</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/harvard-students-blame-apartheid-regime-for-israel-gaza-war-alumni-react?traffic_source=rss</link>
-				<title>Harvard students blame ‘apartheid regime’ for Israel-Gaza war, alumni react</title>
-				<description><![CDATA[Prominent Harvard alumni express outrage after a coalition of student organisations issues a pro-Palestinian letter.]]></description>
-				<pubDate>Tue, 10 Oct 2023 07:35:18 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696920270</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/what-to-know-about-liberias-upcoming-elections?traffic_source=rss</link>
-				<title>What to know about Liberia’s presidential election</title>
-				<description><![CDATA[Liberia goes to the polls on Tuesday amid growing anger over corruption and the cost of living.]]></description>
-				<pubDate>Tue, 10 Oct 2023 06:27:37 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696435778</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/car-rams-into-chinese-consulate-in-san-francisco-police-shoot-driver-dead?traffic_source=rss</link>
-				<title>Car rams into Chinese consulate in San Francisco; police shoot driver dead</title>
-				<description><![CDATA[Chinese consulate said incident was &#039;serious threat&#039;, but details about what happened remain sketchy.]]></description>
-				<pubDate>Tue, 10 Oct 2023 05:41:40 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696913578</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/features/2023/10/10/the-libyan-divers-facing-daily-horror-to-retrieve-dernas-dead?traffic_source=rss</link>
-				<title>The Libyan divers facing daily horror to retrieve Derna’s dead</title>
-				<description><![CDATA[Libyan divers are left to find bodies still buried missing at sea after most international relief teams left.]]></description>
-				<pubDate>Tue, 10 Oct 2023 05:35:10 +0000</pubDate>
-				<category>Features</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696596270</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/hamas-says-will-kill-hostages-if-israeli-attacks-on-gaza-civilians-continue?traffic_source=rss</link>
-				<title>Hamas says will kill hostages if Israeli attacks on Gaza civilians continue</title>
-				<description><![CDATA[Human Rights Watch terms Israeli Defence Minister Yoav Gallant&#039;s call for a &#039;complete siege&#039; on Gaza a &#039;war crime&#039;.]]></description>
-				<pubDate>Tue, 10 Oct 2023 04:55:30 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696909978</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/dozens-killed-and-injured-in-military-attack-on-myanmar-refugee-camp?traffic_source=rss</link>
-				<title>Dozens killed and injured in military attack on Myanmar refugee camp</title>
-				<description><![CDATA[The camp near the Chinese border houses thousands of people displaced by decades of conflict.]]></description>
-				<pubDate>Tue, 10 Oct 2023 04:21:01 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696903932</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/what-we-know-the-number-of-foreigners-killed-missing-abducted-in-israel?traffic_source=rss</link>
-				<title>What we know: The number of foreigners killed, missing, abducted in Israel</title>
-				<description><![CDATA[Citizens and dual nationals from more than 20 countries were killed or remain missing following violence in Israel.]]></description>
-				<pubDate>Tue, 10 Oct 2023 03:31:12 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696904508</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/opinions/2023/10/10/get-this-straight-western-media-palestinians-arent-sub-human?traffic_source=rss</link>
-				<title>Get this straight, Western media: Palestinians aren’t sub-human</title>
-				<description><![CDATA[Dehumanisation of Palestinians is as central to Israel&#039;s war strategy as the deadly missiles it wields. ]]></description>
-				<pubDate>Tue, 10 Oct 2023 03:09:10 +0000</pubDate>
-				<category>Opinions</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696904717</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/biden-interviewed-by-special-counsel-in-classified-documents-investigation?traffic_source=rss</link>
-				<title>Biden interviewed by special counsel in classified documents investigation</title>
-				<description><![CDATA[US president was interviewed on Sunday and Monday, suggesting the investigation may be in its final stages.]]></description>
-				<pubDate>Tue, 10 Oct 2023 03:05:25 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696904445</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/families-of-the-executed-appeal-to-heartless-singapore-for-change?traffic_source=rss</link>
-				<title>Families of the executed appeal to ‘heartless’ Singapore for change</title>
-				<description><![CDATA[Families call for moratorium on executions and review of the use of the death penalty in the city state.]]></description>
-				<pubDate>Tue, 10 Oct 2023 02:44:56 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696901271</guid>
-							</item>
-					<item>
-				<link>https://www.aljazeera.com/news/2023/10/10/major-international-airlines-suspend-flights-to-israel-amid-war-on-gaza?traffic_source=rss</link>
-				<title>Major international airlines suspend flights to Israel amid war on Gaza</title>
-				<description><![CDATA[Israel aviation authority advises airlines still flying in its airspace to carry extra fuel as delays to be expected.]]></description>
-				<pubDate>Tue, 10 Oct 2023 01:36:38 +0000</pubDate>
-				<category>News</category>
-				<guid isPermaLink="false">https://www.aljazeera.com/?t=1696899264</guid>
-							</item>
-			</channel>
-</rss>
+// Use the Fetch API to retrieve the RSS feed
+fetch(rssFeedUrl)
+  .then((response) => response.text())
+  .then((data) => {
+    // Parse the XML data into a JavaScript object
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(data, 'text/xml');
+
+    // Extract items (news articles) from the RSS feed
+    const items = xmlDoc.querySelectorAll('item');
+
+    // Loop through the items and display them on your website
+    items.forEach((item) => {
+      const title = item.querySelector('title').textContent;
+      const description = item.querySelector('description').textContent;
+      const link = item.querySelector('link').textContent;
+
+      // Create HTML elements to display the news content
+      const newsItem = document.createElement('div');
+      newsItem.innerHTML = `<h2><a href="${link}" target="_blank">${title}</a></h2>
+                            <p>${description}</p>`;
+
+      // Append the news item to your webpage
+      document.getElementById('news-container').appendChild(newsItem);
+    });
+  })
+  .catch((error) => {
+    console.error('Error fetching RSS feed:', error);
+  });
+
+        // JavaScript code to retrieve and parse the RSS feed should be placed here
+        // Example:
+        // fetchRSSFeedAndDisplayNews();
+    </script>
+</head>
+<body>
+    <h1>www.belski.com</h1>
+    <div id="news-container">
+        <!-- News items will be displayed here using JavaScript -->
+    </div>
+</body>
+</html>
