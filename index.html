@@ -3,63 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST01-AJFEED</title>
+    <title>belski</title>
     <!-- Add your CSS styles here to customize the appearance of the feed -->
     <style>
-        /* Customize the appearance of the feed */
-        #feed-container {
-            margin: 20px;
-        }
-        h2 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        p {
-            font-size: 14px;
+        h1 {
+            font-family: helvetica;
         }
     </style>
 </head>
 <body>
-    <div id="feed-container">
-        <!-- The RSS feed items will be displayed here using JavaScript -->
-    </div>
-    
-    <!-- Add your JavaScript code for the RSS feed reader here -->
-    <script>
-        // JavaScript code to fetch and display the RSS feed
-        // Replace the following URL with the RSS feed URL you want to display
-        const rssFeedUrl = 'https://www.ajplus.net/stories?format=rss';
-
-        // Function to fetch and display the RSS feed
-        function fetchAndDisplayRSSFeed() {
-            fetch(rssFeedUrl)
-                .then((response) => response.text())
-                .then((data) => {
-                    const parser = new DOMParser();
-                    const xmlDoc = parser.parseFromString(data, 'text/xml');
-                    const items = xmlDoc.querySelectorAll('item');
-
-                    // Create and display the RSS feed items
-                    items.forEach((item) => {
-                        const title = item.querySelector('title').textContent;
-                        const description = item.querySelector('description').textContent;
-                        const link = item.querySelector('link').textContent;
-
-                        const newsItem = document.createElement('div');
-                        newsItem.innerHTML = `<h2><a href="${link}" target="_blank">${title}</a></h2>
-                                              <p>${description}</p>`;
-
-                        document.getElementById('feed-container').appendChild(newsItem);
-                    });
-                })
-                .catch((error) => {
-                    console.error('Error fetching RSS feed:', error);
-                });
-        }
-
-        // Call the function to fetch and display the RSS feed
-        fetchAndDisplayRSSFeed();
-    </script>
+   <h1>belski...</h1>
 </body>
 </html>
 
